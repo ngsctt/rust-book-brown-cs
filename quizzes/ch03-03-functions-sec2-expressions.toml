@@ -18,10 +18,8 @@ type = "Tracing"
 prompt.program = """
 fn f(x: i32) -> i32 { x + 1 }
 fn main() {
-  println!("{}", f({
-    let y = 1;
-    y + 1
-  }));
+  let y = 1;
+  println!("{}", y + 1);
 }
 """
 answer.doesCompile = true
